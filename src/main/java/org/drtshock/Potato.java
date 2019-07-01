@@ -117,7 +117,8 @@ public class Potato implements Tuber {
         System.out.println("Trying to boil potato at " + waterDegrees + " degrees.");
         if (waterDegrees < 70) {
             return false;
-        } else if (waterDegrees > 130) {
+        } 
+        if (waterDegrees > 130) {
             throw new BurntException(waterDegrees);
         }
         return true;
@@ -201,5 +202,4 @@ public class Potato implements Tuber {
             return this.name;
         }
     }
-
 }
